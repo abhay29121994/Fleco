@@ -41,7 +41,7 @@ export const PendingTask = () => {
   const getPendingTask = async (req, res) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/todos/pendingtask",
+        "https://fleco.onrender.com/api/todos/pendingtask",
         {
           method: "GET",
           headers: {
@@ -194,14 +194,17 @@ export const PendingTask = () => {
     let newTodo = { ...todo, tag: tagIds, createdBy: userId }; // Include userId here
 
     try {
-      let response = await fetch("https://fleco.onrender.com/api/todos/addtodo", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newTodo), // Send finalTodo directly
-      });
+      let response = await fetch(
+        "https://fleco.onrender.com/api/todos/addtodo",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newTodo), // Send finalTodo directly
+        }
+      );
       response = await response.json();
       getPendingTask();
       closeModal();
