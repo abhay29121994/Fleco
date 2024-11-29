@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
 export const Register = () => {
   const { storeTokenLocally } = useAuth();
@@ -98,7 +98,7 @@ export const Register = () => {
         </div>
         <button type="submit">Register</button>
       </form>
-      <p>Already have an account then <a href="/login">Log in</a></p>
+      <p>Already have an account then <Link to="/login">Log in</Link></p>
 
       </div>
     </>
