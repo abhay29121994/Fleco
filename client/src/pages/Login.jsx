@@ -73,7 +73,9 @@ export const Login = () => {
           </div>
           <button type="submit">Login</button>
         </form>
-        <p>Don't have account then <a href="/register">Sign up</a></p>
+        <p>
+          Don't have an account? Then <Link to="/register">Sign up</Link>
+        </p>
       </div>
     </>
   );
