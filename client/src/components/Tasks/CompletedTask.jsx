@@ -26,7 +26,7 @@ export const CompletedTask = () => {
   };
   const getCompletedTask = async () => {
     const response = await fetch(
-      "http://localhost:5000/api/todos/completedtask",
+      "https://fleco.onrender.com/api/todos/completedtask",
       {
         method: "GET",
         headers: {
@@ -50,7 +50,7 @@ export const CompletedTask = () => {
     console.log(item._id);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/todos/changestatus/update/${item._id}`,
+        `https://fleco.onrender.com/api/todos/changestatus/update/${item._id}`,
         {
           method: "PATCH",
           headers: {
@@ -74,7 +74,7 @@ export const CompletedTask = () => {
   const deleteTodo = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/todos/delete/${id}`,
+        `https://fleco.onrender.com/api/todos/delete/${id}`,
         {
           method: "Delete",
           headers: {

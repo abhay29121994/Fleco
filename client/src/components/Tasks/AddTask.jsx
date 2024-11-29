@@ -13,7 +13,7 @@ export const AddTask = ({setSelectedOption }) => {
   const getCategories = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/todos/categories",
+        "https://fleco.onrender.com/api/todos/categories",
         {
           method: "GET",
         }
@@ -53,7 +53,7 @@ export const AddTask = ({setSelectedOption }) => {
     e.preventDefault();
     // setTodo((prev) =>
     const response = await fetch(
-      "http://localhost:5000/api/tags/checkandstoretags/",
+      "https://fleco.onrender.com/api/tags/checkandstoretags/",
       {
         method: "POST",
         body: JSON.stringify({ tags }),
@@ -82,7 +82,7 @@ export const AddTask = ({setSelectedOption }) => {
     let newTodo = { ...todo, tag: tagIds, createdBy: userId }; // Include userId here
 
     try {
-      let response = await fetch("http://localhost:5000/api/todos/addtodo", {
+      let response = await fetch("https://fleco.onrender.com/api/todos/addtodo", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

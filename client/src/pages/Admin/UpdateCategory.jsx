@@ -18,7 +18,7 @@ export const UpdateCategory = () => {
 
   const getSingleCategory = async () => {
     const response = await fetch(
-      `http://localhost:5000/admin/route/category/${editId}`,
+      `https://fleco.onrender.com/admin/route/category/${editId}`,
       {
         method: "GET",
         headers: {
@@ -56,7 +56,7 @@ export const UpdateCategory = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:5000/admin/route/category/update/${editId}`,
+        `https://fleco.onrender.com/admin/route/category/update/${editId}`,
         {
           method: "PATCH",
           headers: {

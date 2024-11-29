@@ -24,7 +24,7 @@ export const Category = () => {
   const getAllCategories = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/admin/route/categories",
+        "https://fleco.onrender.com/admin/route/categories",
         {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
@@ -59,7 +59,7 @@ export const Category = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:5000/admin/route/category",
+        "https://fleco.onrender.com/admin/route/category",
         {
           method: "POST",
           body: JSON.stringify(category),
@@ -93,7 +93,7 @@ export const Category = () => {
   const handleDelete = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/admin/route/category/delete/${id}`,
+        `https://fleco.onrender.com/admin/route/category/delete/${id}`,
         {
           method: "DELETE",
           headers: { Authorization: `Bearer ${token}` },

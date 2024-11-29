@@ -86,7 +86,7 @@ export const PendingTask = () => {
   const getCategories = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/todos/categories",
+        "https://fleco.onrender.com/api/todos/categories",
         {
           method: "GET",
         }
@@ -171,7 +171,7 @@ export const PendingTask = () => {
     e.preventDefault();
     // setTodo((prev) =>
     const response = await fetch(
-      "http://localhost:5000/api/tags/checkandstoretags/",
+      "https://fleco.onrender.com/api/tags/checkandstoretags/",
       {
         method: "POST",
         body: JSON.stringify({ tags }),
@@ -194,7 +194,7 @@ export const PendingTask = () => {
     let newTodo = { ...todo, tag: tagIds, createdBy: userId }; // Include userId here
 
     try {
-      let response = await fetch("http://localhost:5000/api/todos/addtodo", {
+      let response = await fetch("https://fleco.onrender.com/api/todos/addtodo", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -218,7 +218,7 @@ export const PendingTask = () => {
   const deleteTodo = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/todos/delete/${id}`,
+        `https://fleco.onrender.com/api/todos/delete/${id}`,
         {
           method: "Delete",
           headers: {
@@ -243,7 +243,7 @@ export const PendingTask = () => {
     console.log(id);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/todos/status/update/${id}`,
+        `https://fleco.onrender.com/api/todos/status/update/${id}`,
         {
           method: "PATCH",
           headers: {
@@ -281,7 +281,7 @@ export const PendingTask = () => {
         tag: oldEditTags, // Ensure tags are passed correctly
       };
       const response = await fetch(
-        "http://localhost:5000/api/todos/updatetask",
+        "https://fleco.onrender.com/api/todos/updatetask",
         {
           method: "PATCH",
           body: JSON.stringify(updatedTodo),

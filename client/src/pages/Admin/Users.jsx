@@ -8,7 +8,7 @@ export const Users = () => {
   const [users, setUsers] = useState([]);
   const getAllUsers = async () => {
     try {
-      const response = await fetch("http://localhost:5000/admin/route/users", {
+      const response = await fetch("https://fleco.onrender.com/admin/route/users", {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });

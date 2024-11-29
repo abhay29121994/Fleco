@@ -40,7 +40,7 @@ export const Tag = () => {
 
   const getAllTags = async () => {
     try {
-      const response = await fetch("http://localhost:5000/admin/route/tags", {
+      const response = await fetch("https://fleco.onrender.com/admin/route/tags", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ export const Tag = () => {
   const handleDelete = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/admin/route/tag/delete/${id}`,
+        `https://fleco.onrender.com/admin/route/tag/delete/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -98,7 +98,7 @@ export const Tag = () => {
     if (!editTagName) return;
     try {
       const response = await fetch(
-        `http://localhost:5000/admin/route/tag/update/${id}`,
+        `https://fleco.onrender.com/admin/route/tag/update/${id}`,
         {
           method: "PATCH",
           body: JSON.stringify({ name: editTagName }),
