@@ -16,7 +16,9 @@ const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
   // origin: "http://localhost:5173",
-  origin: "https://fleco.onrender.com", // Updated URL
+  // origin: "https://fleco.onrender.com", // Updated URL
+  origin: "https://fleco-o6akink10-vishals-projects-b7b3f36c.vercel.app", // Vercel frontend URL
+
   methods: "GET,POST,PATCH,DELETE,HEAD,PUT",
   credentials: true,
 };
