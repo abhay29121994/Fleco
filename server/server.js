@@ -15,7 +15,8 @@ const connectWithDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  // origin: "http://localhost:5173",
+  origin: "https://fleco.onrender.com", // Updated URL
   methods: "GET,POST,PATCH,DELETE,HEAD,PUT",
   credentials: true,
 };
