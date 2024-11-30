@@ -14,12 +14,24 @@ const tagRouter = require("./router/tag-route");
 const connectWithDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
+// Allowed domains
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://fleco.onrender.com",
+  "https://fleco-wheat.vercel.app",
+  "https://fleco-git-main-vishals-projects-b7b3f36c.vercel.app",
+  "https://fleco-cd8dfjbk0-vishals-projects-b7b3f36c.vercel.app",
+];
+
+// Dynamically set CORS origin
 const corsOptions = {
-  // origin: "http://localhost:5173",
-  // origin: "https://fleco.onrender.com", // Updated URL
-  // origin: "https://fleco-o6akink10-vishals-projects-b7b3f36c.vercel.app", // Vercel frontend URL
-  // origin:"https://fleco-phi.vercel.app/",
-  origin: "https://fleco-vishals-projects-b7b3f36c.vercel.app",
+  origin: (origin, callback) => {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: "GET,POST,PATCH,DELETE,HEAD,PUT",
   credentials: true,
 };
