@@ -20,8 +20,9 @@ const allowedOrigins = [
   "https://fleco.onrender.com",
   "https://fleco-wheat.vercel.app",
   "https://fleco-git-main-vishals-projects-b7b3f36c.vercel.app",
-  "https://fleco-cd8dfjbk0-vishals-projects-b7b3f36c.vercel.app",
+  "https://fleco-g0ya7v7o0-vishals-projects-b7b3f36c.vercel.app",
 ];
+
 
 // Dynamically set CORS origin
 const corsOptions = {
