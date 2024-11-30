@@ -1,12 +1,12 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
-  "builds": [
+  "rewrites": [
     {
-      "src": "client/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "client/build"
-      }
+      "source": "/admin/**",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/**",
+      "destination": "/index.html"
     }
   ]
 }
