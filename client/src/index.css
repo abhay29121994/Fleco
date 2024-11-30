@@ -555,6 +555,8 @@ select {
   max-width: 500px;
   text-align: center;
   transition: all 0.3s ease-in-out;
+
+  
 }
 
 /* Title Styling */
@@ -636,7 +638,7 @@ select {
 /* Responsive Design */
 @media screen and (max-width: 500px) {
   .contact-form-container {
-    width: 90%;
+    /* width: 90%; */
     padding: 90px;
   }
 
