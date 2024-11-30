@@ -21,13 +21,16 @@ export const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://fleco.onrender.com/api/auth/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(user),
-      });
+      const response = await fetch(
+        "https://fleco.onrender.com/api/auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(user),
+        }
+      );
       //console.log(response);
       const finalResponse = await response.json();
 
@@ -53,53 +56,54 @@ export const Register = () => {
   };
   return (
     <>
-    <div className="register-container">
-      <h1>Task Todo Registeration</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <input
-            type="text"
-            value={user.username}
-            name="username"
-            placeholder="username"
-            className="input"
-            onChange={handleInput}
-          />
-        </div>
-        <div>
-          <input
-            type="email"
-            name="email"
-            value={user.email}
-            placeholder="email"
-            className="input"
-            onChange={handleInput}
-          />
-        </div>
-        <div>
-          <input
-            type="phone"
-            name="phone"
-            value={user.phone}
-            placeholder="phone"
-            className="input"
-            onChange={handleInput}
-          />
-        </div>
-        <div>
-          <input
-            type="password"
-            name="password"
-            value={user.password}
-            placeholder="password"
-            className="input"
-            onChange={handleInput}
-          />
-        </div>
-        <button type="submit">Register</button>
-      </form>
-      <p>Already have an account then <Link to="/login">Log in</Link></p>
-
+      <div className="register-container">
+        <h1>Task Todo Registeration</h1>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <input
+              type="text"
+              value={user.username}
+              name="username"
+              placeholder="username"
+              className="input"
+              onChange={handleInput}
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              value={user.email}
+              placeholder="email"
+              className="input"
+              onChange={handleInput}
+            />
+          </div>
+          <div>
+            <input
+              type="phone"
+              name="phone"
+              value={user.phone}
+              placeholder="phone"
+              className="input"
+              onChange={handleInput}
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              value={user.password}
+              placeholder="password"
+              className="input"
+              onChange={handleInput}
+            />
+          </div>
+          <button type="submit">Register</button>
+        </form>
+        <p>
+          Already have an account Then <Link to="/login">Log in</Link>
+        </p>
       </div>
     </>
   );
