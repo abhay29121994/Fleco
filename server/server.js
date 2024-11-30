@@ -18,11 +18,10 @@ const errorMiddleware = require("./middlewares/error-middleware");
 const allowedOrigins = [
   "http://localhost:5173",
   "https://fleco.onrender.com",
-  "https://fleco-wheat.vercel.app",
+  "https://fleco-five.vercel.app",
   "https://fleco-git-main-vishals-projects-b7b3f36c.vercel.app",
-  "https://fleco-g0ya7v7o0-vishals-projects-b7b3f36c.vercel.app",
+  "https://fleco-g0u56gyxs-vishals-projects-b7b3f36c.vercel.app",
 ];
-
 
 // Dynamically set CORS origin
 const corsOptions = {
