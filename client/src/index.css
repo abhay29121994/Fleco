@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
- 
+
   z-index: 2;
   top: 0;
 }
@@ -123,7 +123,6 @@ body {
   -o-transition: opacity 0.3s ease;
 }
 
-
 .edit-task-content {
   padding: 20px;
 }
@@ -164,7 +163,7 @@ body {
   font-size: 14px;
 }
 
-.common-btn{
+.common-btn {
   display: flex;
   justify-content: end;
 }
@@ -613,7 +612,7 @@ select {
 @media screen and (max-width: 500px) {
   .contact-form-container {
     width: 90%;
-    padding: 15px;
+    padding: 90px;
   }
 
   .input {
@@ -742,7 +741,7 @@ select {
 /* Media Queries for Responsiveness */
 @media (max-width: 600px) {
   .Login-container {
-    padding: 20px;
+    padding: 90px;
   }
 
   .Login-container h1 {
@@ -762,7 +761,7 @@ select {
   }
 }
 
-.register-container{
+.register-container {
   background-color: #fff;
   margin: 0 auto;
 
@@ -770,9 +769,8 @@ select {
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 500px;
- text-align: center; 
+  text-align: center;
   transition: all 0.3s ease-in-out;
-  
 }
 
 .register-container h1 {
@@ -844,13 +842,12 @@ select {
 /* Media Queries for Responsiveness */
 @media (max-width: 600px) {
   .register-container {
-    padding: 20px;
+    padding: 90px;
   }
-  .sidebar
-  {
+  .sidebar {
     display: none;
   }
-  .content{
+  .content {
     margin-left: 0;
   }
 
@@ -870,7 +867,6 @@ select {
     font-size: 12px;
   }
 }
-
 
 .view-modal-content {
   max-width: 500px;
@@ -956,7 +952,7 @@ select {
   }
 }
 
-.modal-content{
+.modal-content {
   max-width: 600px;
   margin: 50px auto;
   background: linear-gradient(135deg, #ffffff, #f8f9fa);
@@ -1009,7 +1005,6 @@ select {
   /* color: #03cc7f; */
 }
 
-
 .internal-modal-content input,
 .internal-modal-content textarea,
 .internal-modal-content select {
@@ -1060,8 +1055,6 @@ select {
 .internal-modal-content .tag .remove-tag:hover {
   transform: scale(1.2);
 }
-
-
 
 .edit-modal-content {
   max-width: 600px;
@@ -1168,7 +1161,6 @@ select {
   transform: scale(1.2);
 }
 
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1179,4 +1171,3 @@ select {
     transform: translateY(0);
   }
 }
-

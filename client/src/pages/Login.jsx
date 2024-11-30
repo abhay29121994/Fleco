@@ -9,7 +9,6 @@ export const Login = () => {
     password: "",
   });
   const { storeTokenLocally } = useAuth();
-  // console.log(storeTokenLocally);
   const handleInput = (e) => {
     let name = e.target.name;
     let value = e.target.value;
@@ -43,12 +42,10 @@ export const Login = () => {
           : responseData.message
       ); //invalid credentials
     }
-    // console.log(user);
   };
   return (
     <>
       <div className="Login-container">
-        {" "}
         <h1>Task Todo Login</h1>
         <form onSubmit={handleSubmit}>
           <div>
