@@ -559,15 +559,19 @@ select {
 
 /* Title Styling */
 .contact-form-container h1 {
-  font-size: 24px;
+  /* font-size: 24px;
   color: #333;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: bold; */
+
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 /* Input and Textarea Styling */
 .contact-form-container .input {
-  width: calc(100% - 20px);
+  /* width: calc(100% - 20px);
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -575,19 +579,31 @@ select {
   box-sizing: border-box;
   font-size: 16px;
   background: #f9f9f9;
+  transition: all 0.3s ease; */
+
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9; /* Light background color */
   transition: all 0.3s ease;
 }
 
 .contact-form-container .input:focus {
-  border-color: #03cc7f;
+  /* border-color: #03cc7f;
   background: #fff;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none; */
+  border-color: #03cc7f; /* Red border on focus */
+  background-color: #fff; /* White background on focus */
   outline: none;
 }
 
 /* Button Styling */
 .contact-form-container .add-btn {
-  width: 100%;
+  /* width: 100%;
   padding: 10px;
   margin-top: 15px;
   background: linear-gradient(90deg, #03cc7f, #02a866);
@@ -595,6 +611,15 @@ select {
   font-size: 16px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; */
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #03cc7f, #02a866);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -615,12 +640,21 @@ select {
     padding: 90px;
   }
 
+  .contact-form-container h1{
+    font-size: 20px;
+
+  }  
   .input {
     font-size: 14px;
   }
 
   .add-btn {
     font-size: 14px;
+  }
+
+  .contact-form-container p{
+    font-size: 12px;
+
   }
 }
 
