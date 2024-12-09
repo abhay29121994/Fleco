@@ -1,0 +1,105 @@
+/* Login Container Styling */
+.Login-container {
+    background-color: #fff;
+    margin: 0 auto;
+  
+    padding: 90px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  
+  .Login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input fields styling */
+  .Login-container .input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Light background color */
+    transition: all 0.3s ease;
+  }
+  
+  .Login-container .input:focus {
+    border-color: #03cc7f; /* Red border on focus */
+    background-color: #fff; /* White background on focus */
+    outline: none;
+  }
+  
+  /* Submit Button Styling */
+  .Login-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #03cc7f, #02a866);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .Login-container button:hover {
+    background: linear-gradient(
+      90deg,
+      #02a866,
+      #03cc7f
+    ); /* Reverse gradient direction */
+  }
+  
+  .Login-container button:active {
+    transform: scale(0.98); /* Subtle shrinking effect on click */
+  }
+  
+  /* Paragraph and Sign up link Styling */
+  .Login-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .Login-container p a {
+    color: #03cc7f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .Login-container p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    .Login-container {
+      padding: 90px;
+    }
+  
+    .Login-container h1 {
+      font-size: 20px;
+    }
+  
+    .Login-container .input {
+      font-size: 14px;
+    }
+  
+    .Login-container button {
+      font-size: 14px;
+    }
+  
+    .Login-container p {
+      font-size: 12px;
+    }
+  }

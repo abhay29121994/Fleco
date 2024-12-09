@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+  }
+  
+  /* Error Page Container */
+  .error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Error Heading */
+  .error-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+    margin-bottom: 20px;
+  }
+  
+  /* Error Message Links */
+  .error-container p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .error-container p a {
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .error-container p a:hover {
+    color: #fff;
+    background-color: #457b9d;
+    border-color: #457b9d;
+  }
+  

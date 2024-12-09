@@ -1,8 +1,8 @@
 // Home.jsx
 import { useState } from "react";
-import { PendingTask } from "../components/Tasks/PendingTask";
-import { AddTask } from "../components/Tasks/AddTask";
-import { CompletedTask } from "../components/Tasks/CompletedTask";
+import { PendingTask } from "../components/Tasks/PendingTask/PendingTask";
+import { AddTask } from "../components/Tasks/AddTask/AddTask";
+import { CompletedTask } from "../components/Tasks/CompletedTask/CompletedTask";
 
 export const Home = () => {
   const [selectedOption, setSelectedOption] = useState("pending");
@@ -33,9 +33,7 @@ export const Home = () => {
       </div>
 
       {/* Main Content Area */}
-      <div className="content">
-        {renderContent()}
-      </div>
+      <div className="content">{renderContent()}</div>
     </div>
   );
 };

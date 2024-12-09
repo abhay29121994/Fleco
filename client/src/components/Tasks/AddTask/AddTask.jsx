@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import AddModal from "../Modals/AddModal";
-import { useAuth } from "../../store/auth";
-
-export const AddTask = ({setSelectedOption }) => {
+import AddModal from "../../Modals/AddModal/AddModal";
+import { useAuth } from "../../../store/auth";
+import "./AddTask.css";
+export const AddTask = ({ setSelectedOption }) => {
   const { user, token } = useAuth();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,7 +32,6 @@ export const AddTask = ({setSelectedOption }) => {
     }
   }, [token]);
 
-  
   useEffect(() => {
     if (category && category.length > 0) {
       // Set the first category ID as the initial category
@@ -82,14 +81,17 @@ export const AddTask = ({setSelectedOption }) => {
     let newTodo = { ...todo, tag: tagIds, createdBy: userId }; // Include userId here
 
     try {
-      let response = await fetch("https://fleco.onrender.com/api/todos/addtodo", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newTodo), // Send finalTodo directly
-      });
+      let response = await fetch(
+        "https://fleco.onrender.com/api/todos/addtodo",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newTodo), // Send finalTodo directly
+        }
+      );
       response = await response.json();
       // getPendingTask();
       closeModal();
@@ -127,26 +129,26 @@ export const AddTask = ({setSelectedOption }) => {
     setIsModalVisible(true); // Show modal immediately
   };
 
-
   return (
     <>
-    <div id="add-todo-container">
-      <button id="add-todo" onClick={openModal}>Add Todo</button>
-      
-    </div>
-    <p id="note">Big goals start with small steps. What's your next step?</p>
-    <AddModal
-          isModalOpen={isModalOpen}
-          isModalVisible={isModalVisible}
-          closeModal={closeModal}
-          handleSubmit={handleSubmit}
-          todo={todo}
-          inputHandler={inputHandler}
-          category={category}
-          handleTagKeyDown={handleTagKeyDown}
-          handleTagRemove={handleTagRemove}
-          tags={tags}
-        />
+      <div id="add-todo-container">
+        <button id="add-todo" onClick={openModal}>
+          Add Todo
+        </button>
+      </div>
+      <p id="note">Big goals start with small steps. What's your next step?</p>
+      <AddModal
+        isModalOpen={isModalOpen}
+        isModalVisible={isModalVisible}
+        closeModal={closeModal}
+        handleSubmit={handleSubmit}
+        todo={todo}
+        inputHandler={inputHandler}
+        category={category}
+        handleTagKeyDown={handleTagKeyDown}
+        handleTagRemove={handleTagRemove}
+        tags={tags}
+      />
     </>
   );
 };

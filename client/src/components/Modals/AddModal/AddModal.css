@@ -1,0 +1,104 @@
+
+.modal-content {
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in-out;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .modal-content .header {
+    background: #03cc7f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-content .header p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .modal-content .header .close {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .modal-content .header .close:hover {
+    transform: scale(1.2);
+  }
+  
+.internal-modal-content {
+    padding: 20px;
+    color: #333;
+  }
+  
+  .internal-modal-content form div {
+    margin-bottom: 15px;
+  }
+  
+  .internal-modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    /* color: #03cc7f; */
+  }
+  
+  .internal-modal-content input,
+  .internal-modal-content textarea,
+  .internal-modal-content select {
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid #03cc7f; */
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .internal-modal-content input:focus,
+  .internal-modal-content textarea:focus,
+  .internal-modal-content select:focus {
+    border-color: #026c4f;
+  }
+  
+  .internal-modal-content textarea {
+    resize: none;
+    height: 80px;
+  }
+  .internal-modal-content .tag-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .internal-modal-content .tag {
+    background: #7e7e7e;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .internal-modal-content .tag .remove-tag {
+    font-size: 18px;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .internal-modal-content .tag .remove-tag:hover {
+    transform: scale(1.2);
+  }

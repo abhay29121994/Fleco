@@ -1,0 +1,114 @@
+
+.addTodo {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition: transform 0.7s;
+    -ms-transition: transform 0.7s;
+    -o-transition: transform 0.7s;
+    z-index: 1000;
+  }
+  
+  .addTodo:hover {
+    color: white;
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+.pendingTaskContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Space between items */
+    padding: 10px;
+    margin-bottom: 200px;
+  }
+  
+  .pendingTask {
+    border: 1px solid rgb(235, 231, 231);
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 4px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: pointer;
+    background-color: #ffffff;
+    position: relative;
+  }
+
+  .task-heading {
+    background-color: #e02020;
+    margin: -16px -17px 16px -16px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: white;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+  }
+
+  #opearions {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+  }
+  
+  #opearions #edit:hover {
+    color: black;
+  }
+  
+  #opearions #delete:hover {
+    color: black;
+  }
+  #opearions .view:hover {
+    color: black;
+  }
+
+  
+.completed {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .completed-btn {
+    padding: 10px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #03cc7f, #02a866);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  
+  .completed-btn:hover {
+    background: linear-gradient(
+      90deg,
+      #02a866,
+      #03cc7f
+    ); /* Reverse gradient direction */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }

@@ -1,5 +1,5 @@
 import { IoIosCloseCircleOutline } from "react-icons/io";
-
+import './EditModal.css';
 const EditModal = ({
   isEditModalOpen,
   isEditModalVisible,

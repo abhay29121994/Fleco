@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route, Navigate  } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { About } from "./pages/About";
-import { Contact } from "./pages/Contact";
-import { Login } from "./pages/Login";
-import { Register } from "./pages/Register";
+import { About } from "./pages/About/About";
+import { Contact } from "./pages/Contact/Contact";
+import { Login } from "./pages/Login/Login";
+import { Register } from "./pages/Register/Register";
 import { Navbar } from "./components/Navbar";
-import { Error } from "./pages/Error";
+import { Error } from "./pages/Error/Error";
 // import { Footer } from "./components/Footer";
 import { Logout } from "./pages/Logout";
 import { AdminLayout } from "./components/Layout/AdminLayout/AdminLayout";
@@ -26,7 +26,7 @@ const App = () => {
         <Navbar />
         <Routes>
           {/* console.log() */}
-          <Route path="/" element={token ? <Home/> : <Login/>} />
+          <Route path="/" element={token ? <Home /> : <Login />} />
 
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/about" element={<About />} />

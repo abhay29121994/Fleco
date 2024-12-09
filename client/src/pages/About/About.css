@@ -1,0 +1,74 @@
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #f7f8fa, #eaeef3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: "Arial", sans-serif;
+    color: #333;
+  }
+  
+  .about-us-container h1 {
+    font-size: 2.5rem;
+    color: #03cc7f;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .about-us-container h2 {
+    font-size: 1.8rem;
+    color: #02a866;
+    margin: 20px 0 10px;
+    font-weight: 600;
+  }
+  
+  .about-us-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-container ul {
+    text-align: left;
+    margin: 10px 0 20px;
+    padding-left: 20px;
+  }
+  
+  .about-us-container ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .about-us-container ul li ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .about-us-container ul li ul li {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-container h1 {
+      font-size: 2rem;
+    }
+  
+    .about-us-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-us-container p,
+    .about-us-container ul li {
+      font-size: 0.95rem;
+    }
+  }
+  
+  

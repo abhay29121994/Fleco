@@ -1,5 +1,5 @@
 import { IoIosCloseCircleOutline } from "react-icons/io";
-
+import "./AddModal.css";
 const AddModal = ({
   isModalOpen,
   isModalVisible,

@@ -1,0 +1,48 @@
+
+.view-modal-content {
+    max-width: 500px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in-out;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .view-modal-content .header {
+    background: #03cc7f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .view-modal-content .header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .view-modal-content .header .close-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .view-modal-content .header .close-icon:hover {
+    transform: scale(1.2);
+  }
+
+  
+.internal-view-content {
+    padding: 20px;
+    color: #333;
+  }
+  
+  .internal-view-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }

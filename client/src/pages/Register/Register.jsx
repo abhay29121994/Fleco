@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../store/auth";
+import { useAuth } from "../../store/auth";
+import "./Register.css";
 export const Register = () => {
   const { storeTokenLocally } = useAuth();
   const [user, setUser] = useState({

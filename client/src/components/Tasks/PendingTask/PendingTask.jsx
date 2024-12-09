@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import { useAuth } from "../../store/auth";
+import { useAuth } from "../../../store/auth";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { CgMathPlus } from "react-icons/cg";
 import { AiTwotoneEdit } from "react-icons/ai";
 import { MdDeleteSweep } from "react-icons/md";
 import { toast } from "react-toastify";
 import { IoIosEye } from "react-icons/io";
-import ViewModal from "../Modals/ViewModal";
-import EditModal from "../Modals/EditModal";
-import AddModal from "../Modals/AddModal";
-
+import ViewModal from "../../Modals/ViewModal/ViewModal";
+import EditModal from "../../Modals/EditModal/EditModal";
+import AddModal from "../../Modals/AddModal/AddModal";
+import "./PendingTask.css";
 export const PendingTask = () => {
   const { user, token } = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -310,7 +310,7 @@ export const PendingTask = () => {
   };
   return (
     <>
-      <div className="pending-container">
+      <div>
         <h1>Pending Task</h1>
         {/* <p>Hi {user.username} These are your pending tasks</p> */}
         <CgMathPlus onClick={openModal} className="addTodo" />
